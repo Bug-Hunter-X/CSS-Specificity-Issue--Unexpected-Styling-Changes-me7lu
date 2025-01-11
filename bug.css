@@ -1,0 +1,7 @@
+The following CSS rule unintentionally targets more elements than intended due to the lack of specificity:
+
+```css
+.container p { color: blue; }
+```
+
+If there's another element with a `p` class nested inside a different container, it will also be affected. This can result in unexpected styling changes in other parts of the website.
