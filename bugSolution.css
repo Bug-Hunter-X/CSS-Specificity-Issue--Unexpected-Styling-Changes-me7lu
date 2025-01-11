@@ -1,0 +1,13 @@
+The solution is to increase the specificity of the CSS selector using a more precise selector, such as:
+
+```css
+.container > p { color: blue; }
+```
+
+This ensures that only direct children (`>` selector) of the `.container` element will be affected, avoiding the unexpected styling in other parts of the website. Alternatively, you can add a class to the specific paragraphs to target, leading to the following:
+
+```css
+.container p.specific-paragraph { color: blue; }
+```
+
+This is generally a more maintainable option.
